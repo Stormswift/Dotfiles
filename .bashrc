@@ -43,3 +43,6 @@ fi
         echo
     }
 
+# Change bash history functionality
+bind '"\e[A" history-search-backward' # Up-Arrow
+bind '"\e[B" history-search-forward'  # Down-Arrow
