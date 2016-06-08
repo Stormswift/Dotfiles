@@ -26,7 +26,7 @@ set background=dark
 "Tab & Shift Length
 set tabstop=4
 set shiftwidth=4
-set expandtab
+"set expandtab
 
 "Auto Indent
 set ai
@@ -54,4 +54,6 @@ function! HasPaste()
     return ''
 endfunction
 
-
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif

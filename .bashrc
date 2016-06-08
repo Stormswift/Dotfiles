@@ -44,5 +44,7 @@ fi
     }
 
 # Change bash history functionality
-bind '"\e[A" history-search-backward' # Up-Arrow
-bind '"\e[B" history-search-forward'  # Down-Arrow
+#bind '"\e[A" history-search-backward' # Up-Arrow
+#bind '"\e[B" history-search-forward'  # Down-Arrow
+
+export PATH=$PATH:~/scripts
